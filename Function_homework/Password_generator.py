@@ -1,20 +1,33 @@
 import random
-import string
+
+letters = "abcdefghijklmnopqrstuvwxyz"
+digits = "0123456789"
+special = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
 def get_character_pool(password_type):
     if password_type == 1:
-        return string.ascii_letters
+        return letters
     elif password_type == 2:
-        return string.ascii_letters + string.digits
+        return letters +digits
     elif password_type == 3:
-        return string.ascii_letters + string.digits + string.punctuation
+        return letters + digits + special
     elif password_type == 4:
-        return string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation
+        return letters + digits + special
     else:
         return ""
     
 def generate_password(length, password_type):
     pool = get_character_pool(password_type)
+    if password_type == 4:
+        password = [
+            random.choice(letters),
+            random.choice(letters.upper()),
+            random.choice(digits),
+            random.choice(special)
+        ]
+        password += random.choices(pool, k=length - 4)
+        random.shuffle(password)
+        return "".join(password)
     return "".join(random.choices(pool, k=length))
 
 def validate_password(password):
@@ -22,7 +35,7 @@ def validate_password(password):
     has_lower = any(c.islower() for c in password)
     has_upper = any(c.isupper() for c in password)
     has_digit = any(c.isdigit() for c in password)
-    has_symbol = any(c in string.punctuation for c in password)
+    has_symbol = any(c in special for c in password)
 
     score = 0
     if length >= 8: score += 20
@@ -118,6 +131,7 @@ def main():
             print("Invalid option. Please try again.")
         end = input("Would you like another password? (y/n): ")
         if(end.lower() == "n"):
+            print("Goodbye!")
             break
 
 if __name__ == "__main__":
