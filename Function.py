@@ -73,57 +73,41 @@ def rocket():
 
 # rocket()
 
-# ------------------------------------------------------------------ #
 
-# Favourite movie:
-# 1. terminator 2 
-# 2. interstellar
-# 3. blacklist
-# 4. Home alone
-# 5. the pursuit of happiness
-
-# showtime:
-# M, A, E
-
-# Features:
-# 1. Available movies and timings
-# 2. seats - number of tickets, 1st class/ vip/ dbox
-# 3. ticket prices - 18 EUR, 25 EUR
-# 4. Show them the booking conformation
 
 # ------------------------------------------------------------------ #
+# default parameters in the function
 
-movies = {
-        "Terminator 2" : ["Morning", "Evening"],
-        "Interstellar" : ["Morning", "Afternoon"],
-        "Blacklist"     : ["Morning","Afternoon","Evening"],
-        "Home alone"    : ["Evening"],
-        "the pursuit of happiness" : ["Morning", "Afternoon"]
-    }
+def write_greeting(name, age, language="en", do_print=False):
+    if(do_print):
+        if(language == "en"):
+            print(f"Hello {name} and age  {age}")
+        elif(language == "de"):
+            print(f"Hallo {name} und age  {age}")
 
-def movie_program():
-    print("This is Today's schedule:")
 
-    for movie in movies:
-        print(f"{movie} has these slots Available:")
-        for i in range(0, len(movies[movie])):
-            print(f"{movies[movie][i]}")
-        print()
+# write_greeting("jayesh", 25, language="de",do_print=True)
+# write_greeting("Jayesh", 25, "en", True)
+# write_greeting("Jayesh", 25, do_print=True)
 
-def ask():
-    title = input(f"Select a Movie: ")
-    if title in movies:
-        time = input(f"Show time: ")
-        if time in movies[title]:
-            print("Time is available")
-            seats = input(f"Choose a seat: ")
-        else:
-            print("Time is not available")
-            return None
-    else:
-        print("Movie not available")
-        return None
-    
+# ------------------------------------------------------------------ #
+# *names == use * to pass tuple 
+# **metadata == use ** to pass dict
 
-movie_program()
-ask()
+def greeting(msg, *names, do_print=False, **metadata):
+    for name in names:
+        message = f"{msg} {name}"
+        if do_print:
+            print(msg)
+    print("metadata: ", metadata)
+
+
+
+greeting("Hello nice to meet you",
+    "Alice","BOB","Jayesh", "Shruti",
+    do_print=True,
+    sender="Jayesh",
+    language="English",
+    address="Texas"
+)
+        
