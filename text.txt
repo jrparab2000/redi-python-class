@@ -1,0 +1,7 @@
+Hello!!!
+This is just for practicing python coding
+Okay
+Goodbye
+!!!
+Hello world
+Close this file nothing here
