@@ -1,10 +1,10 @@
-# Text file dumping .txt
-# no special formating 
+# Text file dumping .txt no special formating 
 # .csv file are sperated by "," use to store muliple information in excel format 
 # / is for the path in linux or mac and \ is used in windows path
 # use r"" to avoide \n in windows can be detected as new string so use r"" insted of just ""
 # use open(file, mode) to open the file 
 # file is the name of the file 
+
 # modes
 # 'r': read, 
 # 'a': Append the write data, 
@@ -61,5 +61,3 @@ content = open(filepath,'r')
 for i in content.readlines():
     print(i)
 content.close()
-
-
