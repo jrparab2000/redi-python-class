@@ -1,0 +1,57 @@
+{
+    "1": {
+        "Title": "Friends",
+        "Genres": [
+            "Comedy",
+            "Romance"
+        ],
+        "Rating": 8.5,
+        "Summary": "Six young (20-something) people from New York City (Manhattan), on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life.This average group of buddies goes through massive mayhem, family trouble, past and future romances, fights, laughs, tears and surprises as they learn what it really means to be a friend.",
+        "Watched": true,
+        "Review": 5
+    },
+    "2": {
+        "Title": "The Office",
+        "Genres": [
+            "Comedy"
+        ],
+        "Rating": 8.5,
+        "Summary": "Steve Carell stars in <b>The Office</b>, a fresh and funny mockumentary-style glimpse into the daily interactions of the eccentric workers at the Dunder Mifflin paper supply company. Based on the smash-hit British series of the same name and adapted for American Television by Greg Daniels, this fast-paced comedy parodies contemporary American water-cooler culture. Earnest but clueless regional manager Michael Scott believes himself to be an exceptional boss and mentor, but actually receives more eye-rolls than respect from his oddball staff.",
+        "Watched": true,
+        "Review": 3
+    },
+    "3": {
+        "Title": "Killing It",
+        "Genres": [
+            "Comedy"
+        ],
+        "Rating": 5.6,
+        "Summary": "<b>Killing It</b> centers on one man's quest to achieve the American dream and exploring themes of class and capitalism, while also being about the hunting of really big snakes.",
+        "Watched": false,
+        "Review": 0
+    },
+    "4": {
+        "Title": "The 100",
+        "Genres": [
+            "Action",
+            "Adventure",
+            "Science-Fiction"
+        ],
+        "Rating": 7.7,
+        "Summary": "Ninety-seven years ago, nuclear Armageddon decimated planet Earth, destroying civilization. The only survivors were the 400 inhabitants of 12 international space stations that were in orbit at the time. Three generations have been born in space, the survivors now number 4,000, and resources are running out on their dying \"Ark\" - the 12 stations now linked together and repurposed to keep the survivors alive. Draconian measures including capital punishment and population control are the order of the day, as the leaders of the Ark take ruthless steps to ensure their future, including secretly exiling a group of 100 juvenile prisoners to the Earth's surface to test whether it's habitable.",
+        "Watched": false,
+        "Review": 0
+    },
+    "5": {
+        "Title": "seaQuest DSV",
+        "Genres": [
+            "Action",
+            "Adventure",
+            "Science-Fiction"
+        ],
+        "Rating": 7.6,
+        "Summary": "The amazing adventure begins in the mid-21st century, as humankind expands its undersea colonization efforts and a tenuous world peace is enforced by the United Earth Oceans (UEO). In order to protect the fledgling underwater colonies from unknown dangers and hostile invaders lurking in the depths of Earth's last frontier, the UEO recruits Captain Nathan Bridger (Roy Scheider) to command the high-tech battle submarine seaQuest and its diverse and eclectic crew.",
+        "Watched": true,
+        "Review": 2
+    }
+}
