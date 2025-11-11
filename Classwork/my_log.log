@@ -1,0 +1,12 @@
+2025-10-23 14:03:57,551 - my_logger - DEBUG -  this is the lowest
+2025-10-23 14:03:57,551 - my_logger - INFO - This is some informantion
+2025-10-23 14:03:57,551 - my_logger - WARNING - this is the warning
+2025-10-23 14:03:57,551 - my_logger - ERROR - something is wrong
+2025-10-23 14:03:57,551 - my_logger - DEBUG -  this is the lowest
+2025-10-23 14:03:57,552 - my_logger - INFO - This is some informantion
+2025-10-23 14:03:57,552 - my_logger - WARNING - this is the warning
+2025-10-23 14:03:57,552 - my_logger - ERROR - something is wrong
+2025-10-23 14:04:21,769 - my_logger - DEBUG -  this is the lowest
+2025-10-23 14:04:21,769 - my_logger - INFO - This is some informantion
+2025-10-23 14:04:21,769 - my_logger - WARNING - this is the warning
+2025-10-23 14:04:21,769 - my_logger - ERROR - something is wrong
