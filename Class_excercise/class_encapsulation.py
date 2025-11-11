@@ -13,7 +13,6 @@ class BankAccount:
         self.set_balance(self.get_balance() + amount)
 
     def withdraw(self, amount):
-        # self._balance = self._balance - amount
         self.set_balance(self.get_balance() - amount)
 
     def __str__(self):
