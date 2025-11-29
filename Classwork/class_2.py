@@ -84,7 +84,7 @@ mynewcar.start_engine()
 mynewcar.wheels = 6
 mynewcar.show_self_wheels() #this will call the wheels assigned to object or instance and any changes made to wheels in this function will change the instance or object copy and dont affect the class copy
 mynewcar.show_cls_wheels()  #this will change the class copy and dont affect the copy in instace or the object becasue this the class method and not the instace method
-
+Car_new.print_att()
 mynewcar_2 = Car_new("BMW")
 print(mynewcar_2.wheels)    #here will be the class attribute which is updated previously
 print(f"this is number of {mynewcar_2.numb_car}")
